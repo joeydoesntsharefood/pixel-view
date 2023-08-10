@@ -431,14 +431,12 @@ const renderRPM  = () => {
 
   iframeContainer.id = 'iframe-container';
   iframeContainer.className = 'iframe-container';
-  iframeContainer.style.width = '1500px';
-  iframeContainer.style.height = '900px';
   
-  iframe.src = 'https://demo.readyplayer.me/avatar?frameApi&bodyType=fullbody';
+  iframe.src = 'https://agriland.readyplayer.me/avatar?frameApi&bodyType=fullbody';
   iframe.id = 'rpm-iframe';
   iframe.className ='rpm-iframe'
-  iframe.sandbox="allow-forms allow-scripts allow-same-origin";
-  iframe.allow="camera; microphone; geolocation; autoplay; fullscreen; encrypted-media; picture-in-picture";
+  iframe.sandbox= "allow-forms allow-scripts allow-same-origin";
+  iframe.allow= "camera; microphone; geolocation; autoplay; fullscreen; encrypted-media; picture-in-picture";
   
   const closeIframe = document.createElement('button');
   closeIframe.appendChild(document.createTextNode('X'));
